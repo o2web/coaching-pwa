@@ -1,8 +1,8 @@
-import { Slider } from './slider/slider'
+import { Filter } from './filter/filter';
 
 const onload = () => {
-	const slider = new Slider;
-	slider.activate();
-}
+	const filter = new Filter;
+	filter.generateList();
+};
 
 window.onload = onload;

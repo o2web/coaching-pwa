@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <!--  Meta  -->
   <meta charset="UTF-8" />
-  <title>Base d'assets o2web</title>
-  
+  <title>Achat de chien</title>
+
   <!--  Styles  -->
   <link rel="stylesheet" href="dist/main.min.css">
 </head>
 <body>
-  <h1>Base d'assets o2web</h1>
-  
+  <div class="content">
+    <h1>Achat de chien</h1>
+    <form class="filters" id="filters-form">
+      <input type="text" id="search" placeholder="Rechercher par nom ou par race">
+      <select id="filters">
+        <option value="1">-- Filtrer les animaux --</option>
+        <option value="2">Ordre alphabétique</option>
+        <option value="3">Chiots seulement (< 1 an)</option>
+        <option value="4">Seulement femelle</option>
+        <option value="5">Seulement mâle</option>
+        <option value="6">Chiens usagés seulement</option>
+      </select>
+      <input type="submit" value="Lancer la recherche" />
+    </form>
+    <table class="dogs-list">
+      <thead class="dogs-list__head">
+        <tr>
+          <th>Photo</th>
+          <th>Nom</th>
+          <th>Race</th>
+          <th>Sexe</th>
+          <th>Age</th>
+          <th>État</th>
+        </tr>
+      </thead>
+      <tbody class="dogs-list__body" id="dog-list">
+        <tr>
+          <td><img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/11234019/Bulldog-standing-in-the-grass.jpg" /></td>
+          <td>Carolina</td>
+          <td>Bulldog</td>
+          <td>Femelle</td>
+          <td>12</td>
+          <td>Neuf</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
   <!-- Scripts -->
   <script src="dist/bundle.js"></script>
 </body>
